@@ -1,0 +1,819 @@
+/* ---------------- Global Classes ---------------- */
+
+html,
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: #120F0F;
+    color: #FFFFFF;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container {
+    margin: 10% 5%;
+}
+
+.left-div {
+    width: 400px;
+}
+
+
+.right-div {
+    overflow: hidden;
+    width: 450px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* --------X-------- Global Classes --------X-------- */
+
+
+
+
+
+
+/* ---------------- TOP Page ---------------- */
+
+.top-page {
+    margin-top: 150px;
+    justify-content: space-between;
+}
+
+.left-div {
+    margin-top: 85px;
+}
+
+.side-link {
+    margin-right: 45px;
+    /* margin-left: -10rem; */
+}
+
+.side-link ul li {
+    width: 39.5px;
+    height: 39.5px;
+    padding: 9px 0;
+}
+
+.side-link ul li img {
+    width: 100%;
+}
+
+.left-content h3 {
+    border: 10px solid #A6A6A6;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background: #A6A6A6;
+    width: fit-content;
+}
+
+.left-content h1 {
+    font-size: 56px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.left-content h2 {
+    font-size: 32px;
+    letter-spacing: 2.5px;
+}
+
+
+.button button {
+    padding: 10px;
+    width: 120px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.button button a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.button button:first-child {
+    background: #120F0F;
+    border: 1px solid #fff;
+}
+
+.button button:nth-child(2) {
+    background: #A6A6A6;
+    border: 1px solid #A6A6A6;
+}
+
+.right-div .image {
+    overflow: hidden;
+    width: 450px;
+    height: 450px;
+}
+
+.right-div .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* ---------------- For A Size ---------------- */
+
+@media (max-width: 945px) {
+
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+
+    .top-page {
+        justify-content: space-around;
+    }
+
+    .right-div .image {
+        width: 350px;
+        height: 350px;
+    }
+
+    .right-div {
+        width: 350px;
+    }
+
+    .left-div {
+        width: 350px;
+        margin-bottom: 50px;
+    }
+
+    .side-link ul {
+        padding: 0;
+    }
+}
+
+@media (max-width: 774px) {
+    .left-div {
+        margin-top: 30px;
+    }
+
+    .right-div {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 390px) {
+    .left-div .side-link ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .right-div .image{
+        width: 250px;
+        height: 250px;
+        margin:0 auto;
+    }
+
+    .left-div .side-link ul li {
+        padding: 10px;
+    }
+    .button button{
+        margin-bottom: 20px;
+    }
+}
+
+/* --------X-------- For A Size --------X-------- */
+
+
+/* --------X-------- TOP Page --------X-------- */
+
+/* ---------------- NavBar ---------------- */
+.navbar {
+    width: 400px;
+    background: #202020;
+    border: 1px solid #202021;
+    border-radius: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.nav-items {
+    justify-content: space-around;
+    margin: 0px;
+    padding-left: 0;
+}
+
+.nav-item {
+    width: 30px;
+    padding: 10px;
+    /* height: 30px; */
+}
+
+.nav-item img {
+    width: 100%;
+}
+@media (max-width: 406px) {
+    .navbar{
+        width: 300px;
+    }
+}
+
+
+/* --------X-------- NavBar --------X-------- */
+
+/* ---------------- Top OF All Section ---------------- */
+.top_of_all_section{
+    text-align: center;
+}
+.top_of_all_section .sub_top{
+    font-size: 18px;
+    font-weight: bold;
+}
+.top_of_all_section .main_top{
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 20px;
+}
+
+/* --------X-------- Top OF All Section --------X-------- */
+
+
+/* ---------------- About ---------------- */
+
+.about_section {
+    margin: 5% 0px;
+    justify-content: space-around;
+}
+.about_img {
+    width: 400px;
+    overflow: hidden;
+}
+
+.about_img img {
+    border-radius: 20px;
+    width: 100%;
+}
+.about_content{
+    width: 500px;
+}
+.about_content .writting {
+    text-align: left;
+    margin: 50px 0px;
+    font-size: 23px;
+    word-spacing: 10px;
+    line-height: 35px;
+}
+ul.about_tag{
+    padding-left: 0;
+  }
+ul.about_tag li {
+    padding: 8px;
+    border: 2px solid white;
+    margin-right: 47px;
+    border-radius: 9px;
+    margin-bottom: 10px;
+}
+ul.about_tag li:last-child {
+    margin-right: 0px;
+
+}
+
+/* --------X-------- About --------X-------- */
+
+/* ---------------- Experience ---------------- */
+
+.experience_box {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    background: #202020;
+    border-radius: 45px;
+}
+
+.experience_wrapper {
+    justify-content: space-between;
+}
+
+.experience_box_top {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 55px;
+}
+.experience_box_list ul{
+    padding: 0;
+}
+.experience_box_list ul li {
+    width: 175px;
+    overflow: hidden;
+    margin: 75px 33px;
+}
+.list_tick {
+    margin-right: 15px;
+}
+
+.list_subline {
+    margin-left: 50px;
+    font-size: 13px;
+}
+.experience_box_list ul li:first-child{
+    margin-top: 30px;
+}
+.list_headline {
+    font-size: 25px;
+}
+@media (max-width: 1120px) {
+    .experience_box {
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    .experience_box_list ul li{
+        margin:74px 10px;
+    }
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    
+}
+@media (max-width: 900px) {
+    .experience_wrapper {
+        justify-content: space-around;
+    }
+
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    
+}
+@media (max-width: 450px) {
+    .experience_box_list  {
+        justify-content: space-around;
+    }
+    .experience_box{
+        height: 700px;
+    }
+    .experience_box_list ul li:last-child{
+        margin-bottom: 0px;
+    }
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    
+}
+
+
+/* --------X-------- Experience --------X-------- */
+
+
+/* ---------------- Edu Professional ---------------- */
+
+.education {
+    width: 500px;
+}
+.edu_professional {
+    justify-content: space-around;
+}
+h1.edu_top {
+    font-size: 40px;
+}
+
+h1.professional_skil_top {
+    font-size: 40px;
+}
+
+.edu_wrapper {
+    background: #202020;
+    padding: 20px;
+    margin: 40px 0px;
+    border-radius: 25px;
+}
+
+h3.edu_top {
+    font-size: 22px;
+    margin: 0px;
+}
+
+p.edu_year {
+    margin: 5px 0;
+    font-size: 13px;
+}
+p.edu_content {
+    font-size: 19px;
+}
+.professional_skill_wrapper {
+    width: 200px;
+    position: relative;
+}
+
+.professinal_skill_wrapper_all.flex-row {
+    justify-content: space-between;
+    text-align: center;
+}
+
+.professional_skil {
+    width: 500px;
+    overflow: hidden;
+}
+p.image_parcent {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1.professional_skil_top {
+    text-align: center;
+}
+
+h1.edu_top {
+    text-align: center;
+}
+
+
+@media (max-width: 1120px) {
+    .education{
+        width: 400px;
+    }
+    .professional_skil{
+        width: 400px;
+    }
+}
+@media (max-width: 450px) {
+    .professinal_skill_wrapper_all.flex-row{
+        justify-content: space-around;
+    }
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    
+}
+
+/* --------X-------- Edu Professional --------X-------- */
+
+/* ---------------- Services ---------------- */
+
+.services_wrapper_all {
+    margin-top: 100px;
+    justify-content: space-around;
+}
+
+.services_wrapper {
+    background: #202020;
+    width: 200px;
+    border-radius: 30px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+.services_button {
+    color: var(--first-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    cursor: pointer;
+  }
+.services_modal {
+    position: fixed;
+    inset: 0;
+    background-color: #120F0F;
+    padding: 2rem 1rem;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+    z-index: 1000;
+  }
+  
+.services_modal_content {
+    position: relative;
+    background-color: #202020;
+    padding: 4.5rem 2.5rem 2.5rem;
+    border-radius: 1.5rem;
+    width: 500px;
+}
+  
+.services_modal_title,
+.services_modal_description {
+    text-align: center;
+  }
+  
+.services_modal_title {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+.services_modal_description {
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+  
+  .services_modal_list {
+    display: grid;
+    gap: .75rem;
+  }
+  
+.services_modal_item {
+    display: flex;
+    align-items: flex-start;
+    column-gap: .5rem;
+  }
+  
+.services_modal_icon {
+    font-size: 1.5rem;
+    color: var(--first-color)
+  }
+  
+.services_modal_info {
+    font-size: var(--small-font-size);
+  }
+  
+.services_modal_close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    cursor: pointer;
+  }
+  
+  /*Active modal*/
+.active_modal {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 624px) {
+    .services_modal_content{
+        width: 400px;
+    }
+}
+@media (max-width: 500px) {
+    .services_modal_content{
+        width: 300px;
+    }
+}
+@media (max-width: 400px) {
+    .services_modal_content{
+        width: 200px;
+        padding: 3.5rem 1.5rem 1.5rem;
+    }
+}
+@media (max-width: 300px) {
+    .services_modal_content{
+        width: 100px;
+        overflow: hidden;
+        padding: 2.5rem .5rem .5rem;
+    }
+}
+
+/* --------X-------- Services --------X-------- */
+
+
+
+
+
+/* ---------------- Project ---------------- */
+  
+.proj_button_wrapper.flex-row {
+    padding: 0px 10px 20px;
+    justify-content: space-between;
+    /* background: black; */
+}
+
+.proj_button {
+    border: 1px solid #c7baba;
+    padding: 10px 15px;
+    background: #737373;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.proj {
+    width: 300px;
+    background: #202020;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+img.projimg {
+    width: 90%;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+h1.proj_title {
+    font-size: 25px;
+    padding: 0px 15px;
+}
+
+.sel_proj {
+    margin: 80px auto;
+    width: 400px;
+}
+ul.flex-row.sel_proj_wrap {
+    justify-content: space-around;
+}
+.proj_wrapper.flex-row {
+    justify-content: space-around;
+}
+.sel_proj_wrap li {
+    padding: 15px;
+    background-color: #202020;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sel_proj_wrap li:first-child{
+    border: 1px solid white;    
+}
+
+.sel_proj_wrap{
+    padding-left: 0;
+}
+
+@media (max-width: 400px) {
+    .sel_proj{
+        width: 200px;
+    }
+    .sel_proj_wrap li{
+        margin-bottom: 10px;
+    }
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    
+}
+/* --------X-------- Project --------X-------- */
+
+/* ---------------- Testimonial ---------------- */
+
+.testo_img_wrapper {
+    width: 50px;
+    overflow: hidden;
+    margin: 15px 250 0px;
+    border-radius: 30px;
+}
+
+.testo_img_wrapper img {
+    width: 100%;
+}
+
+.testomonial {
+    width: 300px;
+    background: #202020;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+}
+
+h1.testo_top {
+    margin: 0;
+    text-align: right;
+}
+
+p.testimonial_content {
+    margin: 10px 0px;
+    text-align: right;
+}
+.testomonial_wrapper {
+    justify-content: space-around;
+    margin-top: 80px;
+}
+/* --------X-------- Testimonial --------X-------- */
+
+
+
+/* ---------------- CONTACT ---------------- */
+
+.contact_title {
+    text-align: center;
+    margin-bottom: 75px;
+    font-size: 25px;
+}
+  
+
+  
+.contact_card {
+    background-color: #202020;
+    padding: 1rem 3rem;
+    border-radius: .75rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.contact_card_icon {
+    width: 40px;
+}
+  
+.contact_card_title,
+.contact_card_data {
+    font-size: 19px;
+    margin: 5px 0px;
+}
+
+.contact_card_data {
+    display: block;
+    margin-bottom: .75rem;
+}
+  
+.contact_button {
+    color: #ffadad;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .25rem;
+
+}
+  
+.contact_button:hover .contact_button_icon {
+    transform: translateX(.25rem);
+}
+  
+.contact_button_icon {
+    transition: .4s;
+    font-size: 1rem;
+    width: 10px;
+}
+  
+.contact_form_div {
+    position: relative;
+    margin-bottom: 2rem;
+    height: 4rem;
+}
+  
+.contact_form_input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #202020;
+    background: none;
+    color: white;
+    outline: none;
+    padding: 1.5rem;
+    border-radius: .75rem;
+    z-index: 1;
+}
+  
+.contact_form_tag {
+    position: absolute;
+    top: -.75rem;
+    left: 1.25rem;
+    font-size: 19px;
+    padding: .25rem;
+    background-color: #202020;
+    z-index: 2;
+}
+  
+.contact_form_area {
+    height: 13rem;
+}
+  
+.contact_form_area textarea {
+    resize: none;
+}
+.contact_content_wrapper.flex-row {
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.buttonmsg {
+    font-size: 19px;
+    padding: 18px 9px;
+    width: 160px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #202020;
+    color: white;
+}
+/* --------X-------- CONTACT --------X-------- */
+
+/* ---------------- Footer ---------------- */
+
+#last_section {
+    background:#737373;
+    margin: 90px 0px 0;
+}
+.last_wrap {
+    padding: 5%;
+    text-align: center;
+}
+ul.last_ul {
+    width: 300px;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+.footer_copy {
+    margin: 50px 0;
+}
+
+@media (max-width: 640px) {
+    .footer_copy {
+        margin: 100px 0;
+    }
+}
+
+/* --------X-------- Footer --------X-------- */
