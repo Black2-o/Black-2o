@@ -29,6 +29,19 @@ a {
     margin: 10% 5%;
 }
 
+.space_around{
+    justify-content: space-around;
+}
+
+
+/* --------X-------- Global Classes --------X-------- */
+
+
+
+
+
+
+/* ---------------- TOP Page ---------------- */
 .left-div {
     width: 400px;
 }
@@ -40,15 +53,6 @@ a {
     display: flex;
     justify-content: flex-end;
 }
-
-/* --------X-------- Global Classes --------X-------- */
-
-
-
-
-
-
-/* ---------------- TOP Page ---------------- */
 
 .top-page {
     margin-top: 150px;
@@ -65,13 +69,8 @@ a {
 }
 
 .side-link ul li {
-    width: 39.5px;
-    height: 39.5px;
+    font-size:36px;
     padding: 9px 0;
-}
-
-.side-link ul li img {
-    width: 100%;
 }
 
 .left-content h3 {
@@ -208,19 +207,12 @@ a {
 }
 
 .nav-items {
-    justify-content: space-around;
     margin: 0px;
     padding-left: 0;
 }
-
-.nav-item {
-    width: 30px;
+.nav-items li a i {
+    font-size: 21px;
     padding: 10px;
-    /* height: 30px; */
-}
-
-.nav-item img {
-    width: 100%;
 }
 @media (max-width: 406px) {
     .navbar{
@@ -234,6 +226,7 @@ a {
 /* ---------------- Top OF All Section ---------------- */
 .top_of_all_section{
     text-align: center;
+    margin: 0 0 11%;
 }
 .top_of_all_section .sub_top{
     font-size: 18px;
@@ -249,11 +242,6 @@ a {
 
 
 /* ---------------- About ---------------- */
-
-.about_section {
-    margin: 5% 0px;
-    justify-content: space-around;
-}
 .about_img {
     width: 400px;
     overflow: hidden;
@@ -317,7 +305,8 @@ ul.about_tag li:last-child {
     overflow: hidden;
     margin: 75px 33px;
 }
-.list_tick {
+.list_tick i {
+    font-size: 35px;
     margin-right: 15px;
 }
 
@@ -373,14 +362,7 @@ ul.about_tag li:last-child {
 .education {
     width: 500px;
 }
-.edu_professional {
-    justify-content: space-around;
-}
-h1.edu_top {
-    font-size: 40px;
-}
-
-h1.professional_skil_top {
+.edu_professional_top {
     font-size: 40px;
 }
 
@@ -408,7 +390,7 @@ p.edu_content {
     position: relative;
 }
 
-.professinal_skill_wrapper_all.flex-row {
+.professinal_skill_wrapper_all {
     justify-content: space-between;
     text-align: center;
 }
@@ -423,13 +405,6 @@ p.image_parcent {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-h1.professional_skil_top {
-    text-align: center;
-}
-
-h1.edu_top {
-    text-align: center;
-}
 
 
 @media (max-width: 1120px) {
@@ -441,7 +416,7 @@ h1.edu_top {
     }
 }
 @media (max-width: 450px) {
-    .professinal_skill_wrapper_all.flex-row{
+    .professinal_skill_wrapper_all{
         justify-content: space-around;
     }
     /* CSS that should be displayed if width is equal to or less than 800px goes here */
@@ -450,133 +425,10 @@ h1.edu_top {
 
 /* --------X-------- Edu Professional --------X-------- */
 
-/* ---------------- Services ---------------- */
-
-.services_wrapper_all {
-    margin-top: 100px;
-    justify-content: space-around;
-}
-
-.services_wrapper {
-    background: #202020;
-    width: 200px;
-    border-radius: 30px;
-    padding: 25px;
-    margin-bottom: 20px;
-}
-.services_button {
-    color: var(--first-color);
-    font-size: var(--small-font-size);
-    display: flex;
-    align-items: center;
-    column-gap: .25rem;
-    cursor: pointer;
-  }
-.services_modal {
-    position: fixed;
-    inset: 0;
-    background-color: #120F0F;
-    padding: 2rem 1rem;
-    display: grid;
-    place-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: .4s;
-    z-index: 1000;
-  }
-  
-.services_modal_content {
-    position: relative;
-    background-color: #202020;
-    padding: 4.5rem 2.5rem 2.5rem;
-    border-radius: 1.5rem;
-    width: 500px;
-}
-  
-.services_modal_title,
-.services_modal_description {
-    text-align: center;
-  }
-  
-.services_modal_title {
-    font-size: 30px;
-    color: white;
-    margin-bottom: 1rem;
-  }
-  
-.services_modal_description {
-    font-size: 20px;
-    margin-bottom: 2rem;
-  }
-  
-  .services_modal_list {
-    display: grid;
-    gap: .75rem;
-  }
-  
-.services_modal_item {
-    display: flex;
-    align-items: flex-start;
-    column-gap: .5rem;
-  }
-  
-.services_modal_icon {
-    font-size: 1.5rem;
-    color: var(--first-color)
-  }
-  
-.services_modal_info {
-    font-size: var(--small-font-size);
-  }
-  
-.services_modal_close {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    font-size: 1.5rem;
-    color: var(--first-color);
-    cursor: pointer;
-  }
-  
-  /*Active modal*/
-.active_modal {
-    visibility: visible;
-    opacity: 1;
-}
-
-@media (max-width: 624px) {
-    .services_modal_content{
-        width: 400px;
-    }
-}
-@media (max-width: 500px) {
-    .services_modal_content{
-        width: 300px;
-    }
-}
-@media (max-width: 400px) {
-    .services_modal_content{
-        width: 200px;
-        padding: 3.5rem 1.5rem 1.5rem;
-    }
-}
-@media (max-width: 300px) {
-    .services_modal_content{
-        width: 100px;
-        overflow: hidden;
-        padding: 2.5rem .5rem .5rem;
-    }
-}
-
-/* --------X-------- Services --------X-------- */
-
-
-
-
 
 /* ---------------- Project ---------------- */
   
-.proj_button_wrapper.flex-row {
+.proj_button_wrapper {
     padding: 0px 10px 20px;
     justify-content: space-between;
     /* background: black; */
@@ -597,10 +449,10 @@ h1.edu_top {
     margin-bottom: 20px;
 }
 
-img.projimg {
-    width: 90%;
-    border-radius: 50px;
-    padding: 20px;
+.projimg {
+    width: 100%;
+    border-radius: 15px;
+    padding: 0px;
 }
 
 h1.proj_title {
@@ -609,14 +461,8 @@ h1.proj_title {
 }
 
 .sel_proj {
-    margin: 80px auto;
+    margin: 8% auto;
     width: 400px;
-}
-ul.flex-row.sel_proj_wrap {
-    justify-content: space-around;
-}
-.proj_wrapper.flex-row {
-    justify-content: space-around;
 }
 .sel_proj_wrap li {
     padding: 15px;
@@ -644,45 +490,6 @@ ul.flex-row.sel_proj_wrap {
 }
 /* --------X-------- Project --------X-------- */
 
-/* ---------------- Testimonial ---------------- */
-
-.testo_img_wrapper {
-    width: 50px;
-    overflow: hidden;
-    margin: 15px 250 0px;
-    border-radius: 30px;
-}
-
-.testo_img_wrapper img {
-    width: 100%;
-}
-
-.testomonial {
-    width: 300px;
-    background: #202020;
-    padding: 20px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 20px;
-}
-
-h1.testo_top {
-    margin: 0;
-    text-align: right;
-}
-
-p.testimonial_content {
-    margin: 10px 0px;
-    text-align: right;
-}
-.testomonial_wrapper {
-    justify-content: space-around;
-    margin-top: 80px;
-}
-/* --------X-------- Testimonial --------X-------- */
-
-
 
 /* ---------------- CONTACT ---------------- */
 
@@ -702,10 +509,10 @@ p.testimonial_content {
     margin-bottom: 20px;
 }
   
-.contact_card_icon {
-    width: 40px;
+.contact_info_icon i {
+    font-size: 33px;
+    padding: 13px;
 }
-  
 .contact_card_title,
 .contact_card_data {
     font-size: 19px;
@@ -775,10 +582,6 @@ p.testimonial_content {
 .contact_form_area textarea {
     resize: none;
 }
-.contact_content_wrapper.flex-row {
-    justify-content: space-around;
-    margin-top: 80px;
-}
 
 .buttonmsg {
     font-size: 19px;
@@ -793,18 +596,19 @@ p.testimonial_content {
 
 /* ---------------- Footer ---------------- */
 
-#last_section {
+footer {
     background:#737373;
-    margin: 90px 0px 0;
 }
 .last_wrap {
     padding: 5%;
     text-align: center;
 }
-ul.last_ul {
+.last_wrap ul{
     width: 300px;
-    justify-content: space-around;
     margin: 20px auto;
+}
+ul.social_last li a i {
+    font-size: 30px;
 }
 .footer_copy {
     margin: 50px 0;
