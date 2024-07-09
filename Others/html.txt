@@ -1,0 +1,191 @@
+           <!-- My Services -->
+    <!-- <section class="container" id="services">
+        <div class="top_of_all_section">
+            <p class="sub_top">My Services</p>
+            <p class="main_top">What I Offer</p>
+        </div>
+
+        <div class="space_around flex-row">
+            <div class="services_wrapper">
+                <h1>Product Designer</h1>
+                <span class="services_button">
+                    See more <i class="bx bx-right-arrow-alt services_icon"></i>
+                </span>
+                <div class="services_modal">
+                    <div class="services_modal_content">
+                        <i class="bx bx-x services_modal_close">X</i>
+
+                        <h3 class="services_modal_title">Product Designer</h3>
+                        <p class="services_modal_description">
+                            Service with more than 3 years of experience.
+                            Providing quality work to clients and companies.
+                        </p>
+                        <ul class="services_modal_list">
+                            <li class="services_modal_item">
+                                <svg width="35" height="35" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                </svg>
+                                <p class="services_modal_info">I develop the user interface.</p>
+                            </li>
+                            <li class="services_modal_item">
+                                <svg width="35" height="35" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                </svg>
+                                <p class="services_modal_info">Web page development.</p>
+                            </li>
+                            <li class="services_modal_item">
+                                <svg width="35" height="35" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                </svg>
+                                <p class="services_modal_info">I create ux element interactions.</p>
+                            </li>
+                            <li class="services_modal_item">
+                                <svg width="35" height="35" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                </svg>
+                                <p class="services_modal_info">I position your company brand.</p>
+                            </li>
+                            <li class="services_modal_item">
+                                <svg width="35" height="35" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                </svg>
+                                <p class="services_modal_info">Design and mockups of products for companies.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="services_wrapper">
+                <h1>Product Designer</h1>
+                <span class="services_button">
+                    See more <i class="bx bx-right-arrow-alt services_icon"></i>
+                </span>
+                <div class="services_modal">
+                    <div class="services_modal_content">
+                        <i class="bx bx-x services_modal_close">X</i>
+
+                        <h3 class="services_modal_title">Product Designer</h3>
+                        <p class="services_modal_description">
+                            Service with more than 3 years of experience.
+                            Providing quality work to clients and companies.
+                        </p>
+                        <ul class="services_modal_list">
+                            <li class="services_modal_item">
+                                <svg width="35" height="35" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                </svg>
+                                <p class="services_modal_info">I develop the user interface.</p>
+                            </li>
+                            <li class="services_modal_item">
+                                <svg width="35" height="35" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                </svg>
+                                <p class="services_modal_info">Web page development.</p>
+                            </li>
+                            <li class="services_modal_item">
+                                <svg width="35" height="35" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                </svg>
+                                <p class="services_modal_info">I create ux element interactions.</p>
+                            </li>
+                            <li class="services_modal_item">
+                                <svg width="35" height="35" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                </svg>
+                                <p class="services_modal_info">I position your company brand.</p>
+                            </li>
+                            <li class="services_modal_item">
+                                <svg width="35" height="35" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                </svg>
+                                <p class="services_modal_info">Design and mockups of products for companies.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="services_wrapper">
+                <h1>Product Designer</h1>
+                <span class="services_button">
+                    See more <i class="bx bx-right-arrow-alt services_icon"></i>
+                </span>
+                <div class="services_modal">
+                    <div class="services_modal_content">
+                        <i class="bx bx-x services_modal_close">X</i>
+
+                        <h3 class="services_modal_title">Product Designer</h3>
+                        <p class="services_modal_description">
+                            Service with more than 3 years of experience.
+                            Providing quality work to clients and companies.
+                        </p>
+                        <ul class="services_modal_list">
+                            <li class="services_modal_item">
+                                <svg width="35" height="35" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                </svg>
+                                <p class="services_modal_info">I develop the user interface.</p>
+                            </li>
+                            <li class="services_modal_item">
+                                <svg width="35" height="35" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                </svg>
+                                <p class="services_modal_info">Web page development.</p>
+                            </li>
+                            <li class="services_modal_item">
+                                <svg width="35" height="35" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                </svg>
+                                <p class="services_modal_info">I create ux element interactions.</p>
+                            </li>
+                            <li class="services_modal_item">
+                                <svg width="35" height="35" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                </svg>
+                                <p class="services_modal_info">I position your company brand.</p>
+                            </li>
+                            <li class="services_modal_item">
+                                <svg width="35" height="35" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 8.75l3.5 3.5l7-7.5"></path>
+                                </svg>
+                                <p class="services_modal_info">Design and mockups of products for companies.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section> -->
+
+
+
+
+
+
+
+
+       <!-- Testimonial -->
+    <!-- <section class="contaner" id="testimonial">
+        <div class="top_of_all_section">
+            <p class="sub_top">My clients say</p>
+            <p class="main_top">Testimonial</p>
+        </div>
+        
+        <div class="space_around flex-row">
+            <div class="testomonial">
+                
+                <div class="testo_img_wrapper"><img src="images/profile.jpg" alt=""></div>
+                <h1 class="testo_top">Black X</h1>
+                <p class="testimonial_content">Lorem ipsum dolor sit amet, consectetur a adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="testomonial">
+                
+                <div class="testo_img_wrapper"><img src="images/profile.jpg" alt=""></div>
+                <h1 class="testo_top">Black X</h1>
+                <p class="testimonial_content">Lorem ipsum dolor sit amet, consectetur a adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+        </div>
+
+    </section> -->

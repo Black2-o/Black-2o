@@ -1,12 +1,24 @@
 /* ---------------- Global Classes ---------------- */
 
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Lato|Oswald&display=swap');
+
+
+:root {
+    --main-bg: #010038;
+    --second-bg:  #293A80;
+    --main-color: #EEEEEE;
+    --another-color: #537EC5;
+}
+
 html,
 body {
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
-    background: #120F0F;
-    color: #FFFFFF;
+    background: var(--main-bg);
+    color: var(--main-color);
+    font-family:  "Lato", sans-serif;
 }
 
 ul li {
@@ -15,7 +27,7 @@ ul li {
 
 a {
     text-decoration: none;
-    color:#FFFFFF;
+    color: var(--main-color);
 }
 
 
@@ -26,12 +38,19 @@ a {
 }
 
 .container {
-    margin: 10% 5%;
+    padding: 10% 5%;
+}
+
+.container:first-child {
+    padding: 1% 5%;
 }
 
 .space_around{
     justify-content: space-around;
 }
+
+
+
 
 
 /* --------X-------- Global Classes --------X-------- */
@@ -43,83 +62,97 @@ a {
 
 /* ---------------- TOP Page ---------------- */
 .left-div {
-    width: 400px;
+    width: 25rem;
+    margin-top: 6rem;
 }
 
 
 .right-div {
     overflow: hidden;
-    width: 450px;
+    width: 27rem;
     display: flex;
     justify-content: flex-end;
 }
 
 .top-page {
-    margin-top: 150px;
+    margin-top: 10rem;
     justify-content: space-between;
 }
 
-.left-div {
-    margin-top: 85px;
-}
-
 .side-link {
-    margin-right: 45px;
-    /* margin-left: -10rem; */
+    margin-right: 2rem;
 }
 
 .side-link ul li {
-    font-size:36px;
-    padding: 9px 0;
+    font-size:2rem;
+    padding: 0.6rem 0;
 }
 
 .left-content h3 {
-    border: 10px solid #A6A6A6;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
     text-align: center;
-    background: #A6A6A6;
+    background: var(--another-color);
     width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: inset 20px 20px 60px #476ba7,
+            inset -20px -20px 60px #5f91e3;
 }
 
 .left-content h1 {
-    font-size: 56px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.5rem;
 }
 
 .left-content h2 {
-    font-size: 32px;
+    font-size: 2.5rem;
     letter-spacing: 2.5px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 .button button {
-    padding: 10px;
-    width: 120px;
-    border-radius: 10px;
-    margin-right: 10px;
+    padding: 0.75rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
 }
 
 .button button a {
-    color: #fff;
-    font-weight: 600;
+    color: var(--main-color);
+    /* font-weight: 600; */
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
 }
 
 .button button:first-child {
-    background: #120F0F;
-    border: 1px solid #fff;
+    background: var(--main-bg);
+    border: 1px solid var(--another-color);
+}
+.button button:first-child:hover {
+    background: var(--another-color);
+    border: 1px solid var(--main-bg);
+    cursor: pointer;
 }
 
 .button button:nth-child(2) {
-    background: #A6A6A6;
-    border: 1px solid #A6A6A6;
+    background: var(--another-color);
+    border: 1px solid var(--another-color);
+}
+.button button:nth-child(2):hover {
+    background: var(--main-bg);
+    border: 1px solid var(--another-color);
+    cursor: pointer;
 }
 
 .right-div .image {
     overflow: hidden;
-    width: 450px;
-    height: 450px;
+    width: 27rem;
+    height: 27rem;
 }
 
 .right-div .image img {
@@ -132,24 +165,23 @@ a {
 
 @media (max-width: 945px) {
 
-    /* CSS that should be displayed if width is equal to or less than 800px goes here */
 
     .top-page {
         justify-content: space-around;
     }
 
     .right-div .image {
-        width: 350px;
-        height: 350px;
+        width: 23rem;
+        height: 23rem;
     }
 
     .right-div {
-        width: 350px;
+        width: 23rem;
     }
 
     .left-div {
-        width: 350px;
-        margin-bottom: 50px;
+        width: 23rem;
+        margin-bottom: 3rem;
     }
 
     .side-link ul {
@@ -159,11 +191,7 @@ a {
 
 @media (max-width: 774px) {
     .left-div {
-        margin-top: 30px;
-    }
-
-    .right-div {
-        margin-bottom: 30px;
+        margin: 3rem 0;
     }
 }
 
@@ -175,8 +203,8 @@ a {
 
     }
     .right-div .image{
-        width: 250px;
-        height: 250px;
+        width: 20rem;
+        height: 20rem;
         margin:0 auto;
     }
 
@@ -196,8 +224,8 @@ a {
 /* ---------------- NavBar ---------------- */
 .navbar {
     width: 400px;
-    background: #202020;
-    border: 1px solid #202021;
+    background: var(--second-bg);
+    border: 1px solid var(--second-bg);
     border-radius: 10px;
     text-align: center;
     position: fixed;
@@ -231,11 +259,13 @@ a {
 .top_of_all_section .sub_top{
     font-size: 18px;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 .top_of_all_section .main_top{
     font-size: 35px;
     font-weight: bolder;
     margin: 20px;
+    font-family: 'Merriweather', serif;
 }
 
 /* --------X-------- Top OF All Section --------X-------- */
@@ -265,11 +295,12 @@ ul.about_tag{
     padding-left: 0;
   }
 ul.about_tag li {
-    padding: 8px;
-    border: 2px solid white;
-    margin-right: 47px;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--another-color);
+    margin-right: 2rem;
     border-radius: 9px;
     margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
 }
 ul.about_tag li:last-child {
     margin-right: 0px;
@@ -281,21 +312,27 @@ ul.about_tag li:last-child {
 /* ---------------- Experience ---------------- */
 
 .experience_box {
-    width: 500px;
-    height: 500px;
+    width: 30rem;
+    height: 30rem;
     overflow: hidden;
-    background: #202020;
+    /* background: var(--second-bg); */
     border-radius: 45px;
+    background: linear-gradient(145deg, #253473, #2c3e89);
+    box-shadow: inset 20px 20px 60px #23316d,
+    inset -20px -20px 60px #2f4393;
+
 }
 
 .experience_wrapper {
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .experience_box_top {
     font-size: 25px;
     text-align: center;
     margin-top: 55px;
+    font-family: 'Merriweather', serif;
+
 }
 .experience_box_list ul{
     padding: 0;
@@ -303,7 +340,7 @@ ul.about_tag li:last-child {
 .experience_box_list ul li {
     width: 175px;
     overflow: hidden;
-    margin: 75px 33px;
+    margin: 75px 30px;
 }
 .list_tick i {
     font-size: 35px;
@@ -313,12 +350,16 @@ ul.about_tag li:last-child {
 .list_subline {
     margin-left: 50px;
     font-size: 13px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1rem;
 }
 .experience_box_list ul li:first-child{
     margin-top: 30px;
 }
 .list_headline {
     font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 @media (max-width: 1120px) {
     .experience_box {
@@ -360,39 +401,49 @@ ul.about_tag li:last-child {
 /* ---------------- Edu Professional ---------------- */
 
 .education {
-    width: 500px;
+    width: 40%;
 }
 .edu_professional_top {
     font-size: 40px;
+    font-family: 'Merriweather', serif;
 }
 
 .edu_wrapper {
-    background: #202020;
+    background: var(--second-bg);
     padding: 20px;
     margin: 40px 0px;
     border-radius: 25px;
+    box-shadow: inset 20px 20px 60px #23316d,
+            inset -20px -20px 60px #2f4393;
+
 }
 
 h3.edu_top {
-    font-size: 22px;
-    margin: 0px;
+    font-size: 1.5rem;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p.edu_year {
     margin: 5px 0;
-    font-size: 13px;
+    font-size: 0.75rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.25rem;
 }
 p.edu_content {
-    font-size: 19px;
+    font-size: 1.05rem;
+    font-family: monospace;
 }
 .professional_skill_wrapper {
-    width: 200px;
+    width: 40%;
     position: relative;
+    margin: 2rem 1rem;
 }
 
 .professinal_skill_wrapper_all {
     justify-content: space-between;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
 }
 
 .professional_skil {
@@ -435,15 +486,15 @@ p.image_parcent {
 }
 
 .proj_button {
-    border: 1px solid #c7baba;
+    border: 1px solid var(--another-color);
     padding: 10px 15px;
-    background: #737373;
+    background: var(--second-bg);
     border-radius: 10px;
     cursor: pointer;
 }
 .proj {
     width: 300px;
-    background: #202020;
+    background: var(--second-bg);
     overflow: hidden;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -466,12 +517,12 @@ h1.proj_title {
 }
 .sel_proj_wrap li {
     padding: 15px;
-    background-color: #202020;
+    background-color: var(--second-bg);
     border-radius: 10px;
     cursor: pointer;
 }
 .sel_proj_wrap li:first-child{
-    border: 1px solid white;    
+    border: 1px solid var(--another-color);    
 }
 
 .sel_proj_wrap{
@@ -502,7 +553,7 @@ h1.proj_title {
 
   
 .contact_card {
-    background-color: #202020;
+    background-color: var(--second-bg);
     padding: 1rem 3rem;
     border-radius: .75rem;
     text-align: center;
@@ -525,7 +576,7 @@ h1.proj_title {
 }
   
 .contact_button {
-    color: #ffadad;
+    color: var(--another-color);
     font-size: 15px;
     display: flex;
     align-items: center;
@@ -556,9 +607,9 @@ h1.proj_title {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 2px solid #202020;
+    border: 2px solid var(--another-color);
     background: none;
-    color: white;
+    color: var(--main-color);
     outline: none;
     padding: 1.5rem;
     border-radius: .75rem;
@@ -571,7 +622,7 @@ h1.proj_title {
     left: 1.25rem;
     font-size: 19px;
     padding: .25rem;
-    background-color: #202020;
+    background-color: var(--second-bg);
     z-index: 2;
 }
   
@@ -588,16 +639,17 @@ h1.proj_title {
     padding: 18px 9px;
     width: 160px;
     border-radius: 10px;
+    border: none;
     cursor: pointer;
-    background: #202020;
-    color: white;
+    background: var(--another-color);
+    color: var(--main-color);
 }
 /* --------X-------- CONTACT --------X-------- */
 
 /* ---------------- Footer ---------------- */
 
 footer {
-    background:#737373;
+    background: var(--another-color);
 }
 .last_wrap {
     padding: 5%;
@@ -621,3 +673,110 @@ ul.social_last li a i {
 }
 
 /* --------X-------- Footer --------X-------- */
+
+
+
+/* ---------------- Loader ---------------- */
+
+@keyframes slide-down {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+  
+.loader{
+    height: 100vh;
+    background-color: #222831;
+}
+.swipe-container {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+}
+  
+.swipe-container p{
+    display: inline;
+    color: #7b808d;
+    animation: slide-down 1s ease forwards;
+}
+
+.swipe-container p:nth-child(2){
+    color: #f6f5f5c7;
+}
+
+
+/* --------X-------- Loader --------X-------- */
+
+/* ---------------- ScrollBar ---------------- */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--second-bg); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-bg); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--another-color); 
+  }
+
+/* --------X-------- ScrollBar --------X-------- */
+
+
+
+
+/* ---------------- ScrollAnimation ---------------- */
+.main{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+header, section, footer{
+    scroll-snap-align: start;
+}
+/* --------X-------- ScrollAnimation --------X-------- */
+
+
+@keyframes comeFromLeft {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes comeFromRight {
+    from{
+        transform: translateX(300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+.animate-left.in-view{
+    animation: comeFromLeft 1.5s;
+}
+.animate-right.in-view{
+    animation: comeFromRight 1.5s;
+}
